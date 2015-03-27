@@ -52,10 +52,21 @@ If the temperature coefficient is the same for all sensors then they will be no 
 
 No they would be no difference if the bridge was powered by constant current or voltage. This can be seen by doing the same calculation with a current source.
 
-\todo{3 questions to integrate}
-\todo{Integrate question: ``Why is a Wheatstone bridge used fro pressure measurement? Draw a bridge with one, two and four sensing resistors and give formula for the output signal. Each resistor is sensitive to temperature sensitive. How can we make this cross sensitivity as small as possible?''}
-\todo{Integrate question: ``Compare the output and temperature coefficient of a Wheatstone bridge based piezoresistive pressure sensor, with; a) 1 resistor as sensor, b) 2 resistors as sensor and c) all 4 resistors as sensor.''}
-\todo{Integrate question: ``How can temperature sensitivity be reduced in a pressure sensor based on piezoresistors?''}
+\subsubsection{Why is a Wheatstone bridge used fro pressure measurement? Draw a bridge with one, two and four sensing resistors and give formula for the output signal. Each resistor is sensitive to temperature sensitive. How can we make this cross sensitivity as small as possible?}
+
+A Wheatstone bridge is differential measurement. It is used because it has a high sensitivity so it can be very accurate.
+
+\begin{description}
+	\item[1 varying resistance] $V_{O} = V_{in}.\frac{\Delta R}{4R}$
+	\item[2 varying resistance] $V_{O} = V_{in}.\frac{\Delta R}{2R}$
+	\item[4 varying resistance] $V_{O} = V_{in}.\frac{\Delta R}{R}$
+\end{description}
+
+\subsubsection{Compare the output and temperature coefficient of a Wheatstone bridge based piezoresistive pressure sensor, with; a) 1 resistor as sensor, b) 2 resistors as sensor and c) all 4 resistors as sensor.}
+
+\subsubsection{How can temperature sensitivity be reduced in a pressure sensor based on piezoresistors?}
+
+Use a balanced differential measurement method. Eg. Wheatstone bridge.
 
 \subsection{How does the ``sensitivity variation method'' work to reduce offset? In which circumstances does this not bring the offset to zero?}
 
