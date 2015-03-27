@@ -76,7 +76,20 @@ However this technique only works if the modification we apply to the sensor doe
 
 \subsection{What is the basic principle of a flip-flop sensor? What are the advantages and disadvantages of this technique?}
 
-\todo{Answer}
+\bookref{8.4.2.3 Stochastic analogue-to-digital converters}{415-417}
+
+An equally distributed number of `1' and `0' can be generated at the output of a flip-flop circuit by switching on and off the supply voltage the circuit. This is due to the noise in the  flip-flop circuit components. However, if an asymmetry is introduced in the circuit this distribution will no longer be equally distributed. By counting the number of `1' and `0' it is possible to measure the asymmetry in the circuit. Figure \ref{fig:flip-flop} shows two sensors based on the flip-flop circuit.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics{flip-flop.png}
+    \caption{(a) Pressure sensitive flip-flop, (b) light-sensitive flip-flop}
+    \label{fig:flip-flop}
+\end{figure}
+
+A flip-flop sensor as the advantage of being highly accurate and immune to noise (binary output). The output of the flip-flop sensor is easy to interpret (count pulses). Flip-flop circuits are small so they can easily be arranged in arrays.
+
+A disadvantage of the flip-flop circuit is that the input signal must be stationary for an amount of time that is long enough to produce enough supply voltage pulses to generate an equally distributed number of `1' and `0' at rest. 
 
 \subsection{How can a ring-oscillator be used as a sensor? Give two examples.}
 
