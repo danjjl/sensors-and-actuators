@@ -93,12 +93,30 @@ A disadvantage of the flip-flop circuit is that the input signal must be station
 
 \subsection{How can a ring-oscillator be used as a sensor? Give two examples.}
 
-\todo{Answer}
+\textit{No reference in book}\\
+
+A ring oscillator is a device composed of an odd number of NOT gates. The output is fed back to the input to create an oscillating circuit (period is twice -- full cycle -- the delay of each gate gate).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics{ring.png}
+    \caption{3-inverter ring oscillator whose output frequency is 1/(6xinverter delay}
+\end{figure}
+
+\begin{description}
+	\item[Temperature] If the NOT gates are built using CMOS technology a linear dependency is introduced between the oscillation frequency and the bias current. If the bias current is temperature dependant, then oscillation frequency and temperature are dependant. [source: S. Suman and B.P. Singh, ``Design of Temperature Sensor Using Ring Oscillator'', \textit{International Journal of Scientific \& Engineering Research}, Vol.3:5, 2012]
+	\item[Pressure] By building a CMOS ring oscillator which includes a MEMS pressure sensing capacitance it is possible to build a pressure sensitive ring oscillator. This is illustrated in figure \ref{fig:ring-cap}. [source: Ching-Liang Dai, Po-Wei Lu , Chienliu Chang and Cheng-Yang Liu, ``Capacitive Micro Pressure Sensor Integrated with a Ring Oscillator Circuit on Chip'', \textit{Sensors}, pp. 10158-10170, Sept 2009]
+\end{description}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{ring-cap.png}
+	\caption{Pressure sensing ring oscillator}
+	\label{fig:ring-cap}
+\end{figure}
 
 \subsection{A sensor signal can be converted into a frequency. Give three methods to generate a frequency output from a
 sensor signal.}
-
-\todo{bookref}
 
 \begin{enumerate}
 
