@@ -136,4 +136,91 @@ sensor signal.}
 	\item A SAW device. Surface acoustic waves are sent over the surface of the device using a piezoelectric material. The time wave takes to travel from the sender to the receiver can be made to be a function of the measurand. For example, for measuring liquid density, where a more dense liquid will slow down the wave's progress. If we feed this output back to the input, we can generate a frequency, which is a function of the speed of the wave over the surface
 \end{enumerate}
 
+\section{Chapter 1 - Development of actuators}
+
+\subsection{How do you protect against: over-current, over-voltage and over-temperature? Give for each a simple example circuit}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{over-temp.png}
+	\caption{Circuit for over-temperature protection - simple negative feedback control loop}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{over-cur.png}
+	\caption{Circuit for over-current protection}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{over-volt.png}
+	\caption{Circuit for over-voltage protection}
+\end{figure}
+
+\subsection{Describe how thermal actuation can be used in the macro scale. For the solution you have chosen, can this be scaled down to micro-level?}
+
+The steam engine is an example of thermal actuation. High pressure steam enters a chamber and pushes a piston which expels exhaust air. Then the process is reversed by exchanging the exhaust and high pressure steam pipes. It is not really possible to scale a steam engine down to the micro-level.
+
+\subsection{Describe the structure and working principle of AC and DC electromotors}
+
+\paragraph{DC} A coil is placed in a magnetic field. The coil is supplied by DC current $\rightarrow$ force makes coil align magnetic field. Then the direction of the current is reversed and a new half-cycle begins.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{dc-motor.png}
+	\caption{DC motor}
+\end{figure}
+
+\paragraph{AC} Alternating current produces a rotating magnetic field in stator (eg. 3 phase). Rotor bars receives varying magnetic Field $\rightarrow$ induced current in rotor $\rightarrow$ force on the rotor.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{ac-motor.png}
+	\caption{AC motor}
+\end{figure}
+
+\subsection{All six signal domains can be used to generate mechanical energy. Describe for all 6 how this can be done, with examples of actuators.}
+
+\begin{description}
+	\item[mechanical] wind mill
+	\item[thermal] steam engine
+	\item[radiation] solar panel connected to DC motor
+	\item[magnetic] ??? DC motor ???
+	\item[chemical] battery connected to DC motor
+	\item[electric] DC motor
+\end{description}
+
+\subsection{Describe the cycle of a petrol motor.}
+
+\begin{enumerate}
+	\item Intake: the piston moves downward, drawing a fresh charge of vaporized fuel/air mixture.
+	\item Compression: Flywheel momentum drives the piston upward, compressing the fuel/air mixture.
+	\item Power: At the top of the compression stroke, the spark plug fires, igniting the compressed fuel. As the fuel burns it expands, driving the piston downward.
+	\item Exhaust: The upward stroke of the piston drives the exhausted fuel out of the cylinder.
+\end{enumerate}
+
+\subsection{Describe the main differences between hydraulic and pneumatic systems. How do these properties determine the
+applications where they are used?}
+
+\begin{itemize}
+	\item Hydraulic uses an incompressible fluid to transfer movement whereas pneumatic uses a compressible gas to transfer force.
+	\item Hydraulic systems are bulky, pneumatic are usually light and handheld.
+	\item Hydraulic systems are slow, pneumatic are fast.
+	\item Hydraulic system force 10 8 N, pneumatic 10 4 N
+\end{itemize}
+
+Applications:
+Hydraulic: heavy lifting, aircraft/ship controls
+
+Pneumatic: hand held tools, such as drills
+
+
+\subsection{What is a linear electric motor. How does this compare with conventional electric motors in terms of structure and
+working principle? What are the advantages with this technique for the transport industry.}
+
+The basic principle of a linear motor is as a conventianol one. It can be considered as motor which has been rolled out.
+Although invented in the 19th century it was not until the 1950s that a
+commercial application was found. More recently the linear motor has been applied to rail transport. Since there is no physical contact between the train and the ground considerably higher speeds than conventional trains can be achieved.
+
 \end{document}
