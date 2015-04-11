@@ -11,6 +11,8 @@
 
 \begin{document}
 
+\tableofcontents
+
 \section{Chapter 8 - Sensor interface and bus system}
 
 \subsection{What is cross-sensitivity? Give two compensation techniques cross-sensitivity.}
@@ -21,8 +23,9 @@ When a sensor is sensitive to an undesirable parameter we say this sensor as a c
 
 Solutions:
 \begin{itemize}
-	\item Design a sensor in such a way that some parts of the sensor have a temperature (or any other parameter) coefficient which is opposite to other parts. Eg. Wheatstone bridge where two resistors have a positive temperature coefficient and two have a negative temperature coefficient or amplifier with a temperature coefficient opposite to sensor temperature coefficient.
+	\item Design a sensor in such a way that some parts of the sensor have a temperature (or any other parameter) coefficient which is opposite to other parts. Eg. Varying resistor with positive temperature coefficient in series with varying resistor with negative temperature coefficient.
 	\item Add a sensor measuring the undesirable parameter. Correct the output of the main sensor using the measure of the undesired parameter. Eg. Pressure sensors are often temperature dependent, add a temperature sensor and compensate the measured the pressure.
+	\item Still another technique would be using a differential measurement scheme. Eg. a Wheatstone bridge
 \end{itemize}
 Other examples: Switching current and voltage contacts in a Hall plate (same as electronic instrumentation)
 
@@ -50,7 +53,8 @@ Other examples: Switching current and voltage contacts in a Hall plate (same as 
 
 If the temperature coefficient is the same for all sensors then they will be no change to the output. If two are positive and two are negative the change in output voltage is equal to (\ref{eq:wheatstone}).
 
-No they would be no difference if the bridge was powered by constant current or voltage. This can be seen by doing the same calculation with a current source.
+If the bridge is supplied by a current source. The current is equally divided in each branch ($R-\Delta R ~ + ~ R+\Delta R = R+\Delta R ~ + ~ R-\Delta R$). And the ouptut voltage is equal to:
+\[ V_O = \frac{I}{2}(R-\Delta R) ~-~ \frac{I}{2}(R+\Delta R) = -I\Delta R \]
 
 \subsubsection{Why is a Wheatstone bridge used fro pressure measurement? Draw a bridge with one, two and four sensing resistors and give formula for the output signal. Each resistor is sensitive to temperature sensitive. How can we make this cross sensitivity as small as possible?}
 
@@ -207,7 +211,7 @@ applications where they are used?}
 	\item Hydraulic uses an incompressible fluid to transfer movement whereas pneumatic uses a compressible gas to transfer force.
 	\item Hydraulic systems are bulky, pneumatic are usually light and handheld.
 	\item Hydraulic systems are slow, pneumatic are fast.
-	\item Hydraulic system force 10 8 N, pneumatic 10 4 N
+	\item Hydraulic system force $10^8$ N, pneumatic $10^4$ N
 \end{itemize}
 
 Applications:
